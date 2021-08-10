@@ -1,0 +1,9 @@
+@use '../abstracts/variables';
+
+.c-title {
+	text-align: center;
+	letter-spacing: 1rem;
+	font-weight: 700;
+	color: $color-secondary;
+	text-transform: uppercase;
+}

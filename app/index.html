@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/main.css">
+
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Bill
+  <!-- Title -->
+  <h1 class="c-title">spli <br> tter </h1>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <!-- Calculator -->
 
-  Number of People
+  <form class="l-calculator">
 
-  Tip Amount
-  / person
+    <div class="l-calculator__input">
 
-  Total
-  / person
+      <div class="c-input">
+        <label class="c-input__label" for="bill">Bill</label>
+        <p class="c-input__message"></p>
+        <input class="c-input__field c-input__field--bill" type="text" name="bill" placeholder="0">
+      </div>
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <div class="l-calculator__radio-buttons">
+      <label> Select Tip %</label>
+      <!-- need to find a code for this -->
+    </div>
+
+    <div class="l-calculator__input">
+
+      <div class="c-input">
+        <label class="c-input__label" for="bill">Number of people</label>
+        <p class="c-input__message"></p>
+        <input class="c-input__field c-input__field--bill" type="text" name="bill" placeholder="0">
+
+      </div>
+
+    </div>
+
+    <div class="l-calculator__result">
+
+
+      <button class="button button--reset">RESET</button>
+    </div>
+
+  </form>
+
+
   </div>
+
 </body>
+
 </html>

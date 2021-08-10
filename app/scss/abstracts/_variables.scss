@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Space Mono', monospace !default;
+
+/// Colors
+/// @type Color
+$color-primary: hsl(172, 67%, 45%) !default;
+$color-secondary: hsl(183, 100%, 15%) !default;
+$color-dark-1: hsl(186, 14%, 43%) !default;
+$color-dark-2: hsl(184, 14%, 56%) !default;
+$color-light-1: hsl(185, 41%, 84%) !default;
+$color-light-2: hsl(189, 41%, 97%) !default;
+$color-white: hsl(0, 0%, 100%) !default;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: ('small': 320px, 'medium': 768px, 'large': 1024px) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+$base-url: '//app/' !default;
