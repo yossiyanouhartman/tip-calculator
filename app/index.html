@@ -18,36 +18,95 @@
   <h1 class="c-title">spli <br> tter </h1>
 
   <!-- Calculator -->
+  <form class="c-calculator">
 
-  <form class="l-calculator">
+    <!-- Grid -->
+    <div class="l-grid">
 
-    <div class="l-calculator__input">
+    </div>
+
+
+    <div class="c-calculator__input">
 
       <div class="c-input">
+
+        <!-- Labels the input field-->
         <label class="c-input__label" for="bill">Bill</label>
+
+        <!-- This paragraph will provide feedback if neccessary -->
         <p class="c-input__message"></p>
-        <input class="c-input__field c-input__field--bill" type="text" name="bill" placeholder="0">
+
+        <div class="c-input__body">
+          <img class="c-input__icon" src="/app/images/icon-dollar.svg" alt="dolar icon">
+          <input class="c-input__field" type="text" name="bill" placeholder="0">
+        </div>
+
       </div>
 
     </div>
 
-    <div class="l-calculator__radio-buttons">
-      <label> Select Tip %</label>
+    <div class="c-calculator__radio-buttons">
+      <!-- <label> Select Tip %</label> -->
+
+      <label class="c-radio-button">
+        <input class="c-radio-button__input" type="radio" name="tip" value="0.05" checked>
+        <span class="c-radio-button__value">5%</span>
+      </label>
+
+      <label class="c-radio-button">
+        <input class="c-radio-button__input" type="radio" name="tip" value="0.1" checked>
+        <span class="c-radio-button__value">10%</span>
+      </label>
+
+      <label class="c-radio-button">
+        <input class="c-radio-button__input" type="radio" name="tip" value="0.15" checked>
+        <span class="c-radio-button__value">15%</span>
+      </label>
+
+      <label class="c-radio-button">
+        <input class="c-radio-button__input" type="radio" name="tip" value="0.25" checked>
+        <span class="c-radio-button__value">25%</span>
+      </label>
+
+      <label class="c-radio-button">
+        <input class="c-radio-button__input" type="radio" name="tip" value="0.5" checked>
+        <span class="c-radio-button__value">50%</span>
+      </label>
+
+      <label class="c-radio-button c-radio-button--custom">
+        <input class="c-radio-button__input" type="radio" name="tip" value="0.5" checked>
+        <input type="text">
+      </label>
+
+      <!-- <label class="c-radio-button" for="tip">
+        <input class="c-radio-button__input" type="radio" name="tip" value="0.05" checked>
+        <span class="c-radio-button__button">5%</span>
+      </label> -->
+
+
       <!-- need to find a code for this -->
     </div>
 
-    <div class="l-calculator__input">
+    <div class="c-calculator__input">
 
       <div class="c-input">
-        <label class="c-input__label" for="bill">Number of people</label>
+
+        <!-- Labels the input field-->
+        <label class="c-input__label" for="people">Number of people</label>
+
+        <!-- This paragraph will provide feedback if neccessary -->
         <p class="c-input__message"></p>
-        <input class="c-input__field c-input__field--bill" type="text" name="bill" placeholder="0">
+
+        <div class="c-input__body">
+          <img class="c-input__icon" src="/app/images/icon-person.svg" alt="person icon">
+          <input class="c-input__field" type="text" name="people" placeholder="0">
+        </div>
 
       </div>
 
     </div>
 
-    <div class="l-calculator__result">
+    <div class="c-calculator__result">
 
 
       <button class="button button--reset">RESET</button>

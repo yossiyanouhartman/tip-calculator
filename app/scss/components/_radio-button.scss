@@ -1,0 +1,30 @@
+.c-radio-button {
+	&__value {
+		display: block;
+		min-width: 100px;
+		max-width: 150px;
+		width: 100%;
+		padding: 5px 10px;
+		background-color: $color-secondary;
+		border-radius: 5px;
+		text-align: center;
+		color: $color-white;
+		cursor: pointer;
+		transition: color, background-color .2s ease;
+
+		&:hover {
+			background-color: $color-primary;
+			color: $color-dark-1;
+		}
+	}
+
+	[type="radio"]:checked + &__value {
+		background-color: $color-primary;
+		color: $color-dark-1;
+	}
+
+	&__input {
+		display: none;
+		visibility: hidden;
+	}
+}

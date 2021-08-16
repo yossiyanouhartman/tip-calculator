@@ -15,11 +15,12 @@
 @import 'base/typography';
 
 // 4. Layout-related sections
-@import 'layout/footer';
+@import 'layout/calculator';
 
 // 5. Components
 @import 'components/title';
-@import 'components/button';
+@import 'components/input';
+@import 'components/radio-button';
 
 // 6. Page-specific styles
 @import 'pages/home';
